@@ -1,6 +1,6 @@
-numpy
-pandas
-scikit-learn
-matplotlib
-ipympl
-notebook
+numpy>=1.26
+pandas>=2.1
+scikit-learn>=1.4
+matplotlib>=3.10
+ipympl>=0.9
+notebook>=7.0

@@ -38,14 +38,17 @@ The silhouette values are low in absolute terms, so the clusters overlap conside
 
 ## Running it
 
+Requires **Python 3.12 or newer** (the notebook uses f-string syntax introduced in 3.12; it was run on Python 3.12.12).
+
 ```bash
 pip install -r requirements.txt
 jupyter notebook
 ```
 
-Two things to know before re-running:
+Three things to know before re-running:
 
-- **Data files are not included.** The notebook reads `responses_hw.csv` and `columns_hw.csv`, which were distributed through the course and are not redistributed here. They are a version of the public *Young People Survey* dataset (available on Kaggle). Place both files next to the notebook.
+- **Data files are not included.** The notebook reads `responses_hw.csv`, which was distributed through the course and is not redistributed here (the course also handed out a second file, `columns_hw.csv`, which the code never reads). It is a version of the public *Young People Survey* dataset (available on Kaggle). Place it next to the notebook; `.gitignore` keeps CSV files out of the repository.
+- **Interactive plots.** The plots use the `ipympl` backend (`%matplotlib widget`), so they can be zoomed and rotated when the notebook runs in Jupyter. GitHub and the PDF show static images of the same plots.
 - **The seed was replaced.** In the original assignment each student's ID number is used as the random seed that selects a personal subset of rows and features. That ID has been replaced with a placeholder (`123456`) in this public copy, so re-running the notebook selects a different subset and gives different numbers from the saved outputs. The outputs and plots stored in the notebook and PDF are the original ones.
 
 ## Tools

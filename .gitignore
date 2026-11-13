@@ -1,0 +1,16 @@
+# Course data files (not ours to redistribute)
+*.csv
+
+# Jupyter and Python caches
+.ipynb_checkpoints/
+__pycache__/
+
+# Virtual environments and IDE settings
+.venv/
+venv/
+.idea/
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
